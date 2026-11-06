@@ -43,6 +43,7 @@ footer{background:#351d1b;color:#fff5e6}.footer-brand p,.footer-col a,.footer-co
 .site-header .header-actions .header-cta--whatsapp{background:#26734f;border-color:#26734f}
 .site-header .header-actions .header-cta--whatsapp:hover{background:#1e6242;border-color:#1e6242}
 .site-header .header-actions .action-icon{font-size:15px;line-height:1}
+.site-header .header-actions .whatsapp-icon{width:16px;height:16px;flex:0 0 16px;fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round;color:#fff}
 @media(max-width:700px){.site-header .header-actions{gap:6px}.site-header .header-actions .header-cta{padding:9px 10px;gap:6px;font-size:10px}.site-header .brand img.wordmark{width:165px}}
 @media(max-width:390px){.site-header{padding-left:3%;padding-right:3%}.site-header .brand img.wordmark{width:130px}.site-header .header-actions .header-cta{padding:8px 8px;gap:5px;font-size:9px}.site-header .menu-toggle{padding:7px}}
 .fleet{padding-top:12px;padding-bottom:105px}
@@ -81,3 +82,20 @@ footer{background:#351d1b;color:#fff5e6}.footer-brand p,.footer-col a,.footer-co
 @media(max-width:1000px){.fleet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{gap:12px}.nav a{font-size:11px}}
 @media(max-width:700px){.fleet{padding-top:0;padding-bottom:74px}.fleet-heading{margin-bottom:23px}.fleet-heading p{font-size:12px}.fleet-grid{gap:13px}.fleet-photo{height:150px}.fleet-info{padding:16px 14px 13px}.fleet-info h3{font-size:21px}.fleet-bottom{align-items:flex-start;flex-direction:column;gap:8px}}
 @media(max-width:420px){.fleet-grid{grid-template-columns:1fr}.fleet-photo{height:190px}.fleet-bottom{align-items:center;flex-direction:row}}
+.hero-shade{background:linear-gradient(90deg,rgba(35,12,10,.82),rgba(35,12,10,.48) 60%,rgba(35,12,10,.08) 100%),linear-gradient(0deg,rgba(24,10,8,.46),transparent 42%)}
+.hero-caption .eyebrow{color:#ffe09a;text-shadow:0 2px 8px #190b08}
+.hero-caption h1,.hero-caption h2{font-weight:700;text-shadow:0 3px 18px rgba(20,8,6,.72)}
+.hero-caption h1 em,.hero-caption h2 em{color:#ffd276;font-weight:700;text-shadow:0 3px 18px rgba(20,8,6,.72)}
+.hero-caption p{color:#fff;font-weight:600;text-shadow:0 2px 10px rgba(20,8,6,.9)}
+.hero-slide{background-image:none;background-position:center 56%}
+.hero-slide::before{content:"";position:absolute;inset:0;background-image:var(--photo);background-size:cover;background-position:center 56%;filter:brightness(1.2) saturate(1.08);transform:scale(1.04);transition:transform 7s}
+.hero-slide.active::before{transform:scale(1)}
+@media(max-width:700px){.hero-slide::before{background-position:58% center}}
+.nav a{font-size:15px}
+@media(max-width:1000px) and (min-width:701px){.nav{gap:10px}.nav a{font-size:12px}}
+.google-reviews-float{position:fixed;right:24px;bottom:24px;z-index:200;display:flex;align-items:center;gap:10px;padding:13px 17px;border:1px solid rgba(255,255,255,.8);border-radius:999px;background:#fffdf8;color:#40251f;font-size:13px;font-weight:700;box-shadow:0 8px 26px rgba(31,18,12,.28);transition:transform .2s,box-shadow .2s,background .2s}
+.google-reviews-float:hover{transform:translateY(-3px);background:#fff;box-shadow:0 12px 30px rgba(31,18,12,.34)}
+.google-reviews-logo{display:block;width:19px;height:19px;flex:0 0 19px}
+.google-reviews-arrow{color:#a34c31;font-size:14px}
+@media(max-width:700px){.google-reviews-float{right:14px;bottom:calc(14px + env(safe-area-inset-bottom));padding:12px 15px;font-size:12px}}
+
